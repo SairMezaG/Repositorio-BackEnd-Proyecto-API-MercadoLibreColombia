@@ -41,7 +41,7 @@ app.use("/api", rutasProductos);
 
 // Ruta principal
 app.get("/", (req, res) => {
-  res.send("BackEnd Proyecto Mercado Libre Colombia");
+  res.send("BackEnd Proyecto Mercado Libre Colombia y todos los cambios");
 });
 
 // Conexión a MongoDB
