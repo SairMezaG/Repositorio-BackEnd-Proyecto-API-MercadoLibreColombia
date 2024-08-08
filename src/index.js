@@ -12,7 +12,7 @@ const app = express();
 app.use(cors()); 
 app.use(express.json()); 
 
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 9001;
 
 // Configuración de multer
 const storage = multer.diskStorage({
@@ -47,8 +47,8 @@ app.get("/", (req, res) => {
 // Conexión a MongoDB
 mongoose
   .connect(process.env.MONGODB_URI)
-  .then(() => console.log("Conectado a MongoDB Atlas"))
-  .catch((error) => console.error("Error al conectar a MongoDB.", error));
+  .then(() => console.log("Conexion EXITOSA"))
+  .catch((error) => console.error("Error de CONEXION.", error));
 
 // Conexión con el servidor
 app.listen(port, () =>
